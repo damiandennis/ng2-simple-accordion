@@ -2,6 +2,19 @@
 
 A very simple accordion directive.
 
+~~~javascript
+
+@NgModule({
+  ...
+  imports:      [
+    ...,
+    AccordionModule
+  ],
+  ...
+})
+export class AppModule { }
+~~~
+
 Usage:
 ~~~html
 <div [accordion]="'group_identifier'" #accordionRef1="accordion">
