@@ -1,7 +1,2 @@
-*
-!*.d.ts
-!**/*.d.ts
-!*.js
-!**/*.js
-!*.metadata.json
-!**/*.metadata.json
+/src
+
