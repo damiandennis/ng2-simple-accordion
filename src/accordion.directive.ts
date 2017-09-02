@@ -41,8 +41,10 @@ export class AccordionDirective implements OnInit {
      *
      * @param event
      */
-    public close(event: Event) {
-        event.preventDefault();
+    public close(event: Event = null) {
+        if (event) {
+            event.preventDefault();
+        }
         AccordionDirective.channels[this.name].emit(false);
     }
 
@@ -51,8 +53,10 @@ export class AccordionDirective implements OnInit {
      *
      * @param event
      */
-    public open(event: Event) {
-        event.preventDefault();
+    public open(event: Event = null) {
+        if (event) {
+            event.preventDefault();
+        }
         AccordionDirective.channels[this.name].emit(this.elementRef.nativeElement);
     }
 
@@ -61,7 +65,7 @@ export class AccordionDirective implements OnInit {
      *
      * @param {Event} event
      */
-    public toggle(event: Event) {
+    public toggle(event: Event = null) {
         this.isShown ? this.close(event) : this.open(event);
     }
 
