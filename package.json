@@ -1,6 +1,6 @@
 {
   "name": "ng2-simple-accordion",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Simple accordion for toggling sections",
   "main": "dist/accordion.module.js",
   "module": "dist/accordion.module.js",
