@@ -62,7 +62,7 @@ export class AccordionDirective implements OnInit {
      * @param {Event} event
      */
     public toggle(event: Event) {
-        this.isShown ? this.open(event) : this.close(event);
+        this.isShown ? this.close(event) : this.open(event);
     }
 
 
