@@ -56,4 +56,14 @@ export class AccordionDirective implements OnInit {
         AccordionDirective.channels[this.name].emit(this.elementRef.nativeElement);
     }
 
+    /**
+     * Toggles open close.
+     *
+     * @param {Event} event
+     */
+    public toggle(event: Event) {
+        this.isShown ? this.open(event) : this.close(event);
+    }
+
+
 }
